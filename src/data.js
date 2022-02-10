@@ -86,6 +86,12 @@ export const Reactjs = [
 		img: "https://user-images.githubusercontent.com/67934444/153339939-6d17944e-fb64-4280-b95b-6aa2e6478304.png",
 		link: "https://my-portfolio-105.netlify.app/",
 	},
+	{
+		id: 4,
+		title: "Krypt Web-3.0",
+		img: "https://user-images.githubusercontent.com/67934444/153458190-3d215bcd-399d-4f51-9228-571673e8496a.png",
+		link: "https://krypt-web-3.netlify.app/",
+	},
 ];
 
 export const MernStack = [
