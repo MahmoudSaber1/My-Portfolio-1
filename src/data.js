@@ -80,6 +80,12 @@ export const Reactjs = [
 		img: "https://user-images.githubusercontent.com/67934444/144620299-586baacd-7aef-4457-9e60-d3c0193a385b.png",
 		link: "https://rogar-iq.github.io/ReactSite/",
 	},
+	{
+		id: 3,
+		title: "My Website",
+		img: "https://user-images.githubusercontent.com/67934444/153339939-6d17944e-fb64-4280-b95b-6aa2e6478304.png",
+		link: "https://my-portfolio-105.netlify.app/",
+	},
 ];
 
 export const MernStack = [
