@@ -1,0 +1,32 @@
+/* ===== Start Footer Section Style ===== */
+.footer {
+   height: 76px;
+   background-color: var(--main-color);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.footer .social {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.footer .social a i {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: var(--main-bg);
+   color: var(--main-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   transition: .5s;
+}
+
+.footer .social a i:hover {
+   transform: rotate(360deg);
+}

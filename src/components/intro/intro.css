@@ -1,0 +1,237 @@
+/* ===== Start Navbar Section Style ===== */
+.nav {
+  box-shadow: var(--box-shadow);
+}
+
+.nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76px;
+}
+
+@media (max-width: 991px) {
+  .nav .navbar {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+}
+
+.nav .navbar .logo h1 {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 991px) {
+  .nav .navbar .logo h1 {
+    font-size: 20px;
+  }
+}
+
+.nav .navbar .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .navbar .links li:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.nav .navbar .links li a {
+  color: var(--main-color);
+  font-size: 17px;
+  transition: var(--main-trans);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+@media (max-width: 991px) {
+  .nav .navbar .links li:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  .nav .navbar .links li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .nav .navbar .links li:not(:last-of-type) {
+    margin-right: 15px;
+  }
+
+  .nav .navbar .links li a {
+    font-size: 12px;
+  }
+}
+
+.nav .navbar .links li a:hover {
+  background-color: var(--main-color);
+  color: var(--main-bg);
+}
+
+@media (max-width: 576px) {
+  .nav .navbar .links li a {
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  .nav .navbar .links li a:hover {
+    background-color: var(--main-color);
+    color: var(--main-bg);
+  }
+
+  .nav .navbar .links li a i {
+    display: none;
+  }
+}
+/* ===== Start Home Section Style ===== */
+.home {
+  height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .info {
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.home .info h2 {
+  position: relative;
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+.home .info h2 span {
+  position: relative;
+  font-size: 35px;
+  color: #252839;
+  -webkit-text-stroke: var(--main-bg) 2px;
+}
+
+.home .info h2 span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: var(--main-color);
+  -webkit-text-stroke: var(--main-bg) 0vw;
+  border-right: 2px solid var(--main-color);
+  overflow: hidden;
+  animation: animateWidth 6s linear infinite;
+}
+
+/* Animation KeyFrame */
+@keyframes animateWidth {
+  0%,
+  10%,
+  100% {
+    width: 0%;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+.home .info p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: var(--main-color);
+  font-weight: 300;
+}
+
+.home .info p span {
+  position: relative;
+  font-size: 30px;
+  color: #252839;
+  -webkit-text-stroke: var(--main-bg) 1px;
+}
+
+.home .info p span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: var(--main-color);
+  -webkit-text-stroke: var(--main-bg) 0vw;
+  border-right: 2px solid var(--main-color);
+  overflow: hidden;
+  animation: animateWidth 6s linear infinite;
+}
+
+@media (max-width: 575px) {
+  .home .info h2 {
+    font-size: 20px;
+  }
+
+  .home .info h2 span {
+    font-size: 25px;
+  }
+
+  .home .info p {
+    font-size: 15px;
+  }
+
+  .home .info p span {
+    font-size: 20px;
+  }
+}
+
+.home .info > a {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  color: var(--main-bg);
+  transition: var(--main-trans);
+}
+
+.home .info > a:hover {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 575px) {
+  .home .info > a {
+    padding: 8px 15px;
+    border-radius: 8px;
+  }
+}
+
+.home .info .social {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home .info .social a i {
+  background-color: var(--main-color);
+  color: var(--main-bg);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.home .info .social a i:hover {
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  box-shadow: var(--box-shadow);
+  transform: rotate(360deg);
+}
