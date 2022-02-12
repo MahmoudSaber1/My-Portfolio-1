@@ -23,6 +23,18 @@ export const HTMLCSS = [
 		img: "https://user-images.githubusercontent.com/67934444/138534903-13ad424c-f288-4f8d-99c0-d48d6d0eef74.png",
 		link: "https://rogar-iq.github.io/Responsive-CV-Site/index.html",
 	},
+	{
+		id: 5,
+		title: "Health Panel",
+		img: "https://user-images.githubusercontent.com/67934444/153712583-aad8f875-2b57-48cc-8fb5-c7b2deca0761.png",
+		link: "https://health-panel-105.netlify.app/",
+	},
+	{
+		id: 6,
+		title: "Signin & Signup",
+		img: "https://user-images.githubusercontent.com/67934444/153712722-658017fc-e0fd-4c1f-a2ca-d253b1d8c123.png",
+		link: "https://slideing-form-105.netlify.app/",
+	},
 ];
 
 export const Javascript = [
@@ -64,6 +76,12 @@ export const Bootstrap = [
 		title: "Bootstrap4 Template",
 		img: "https://user-images.githubusercontent.com/67934444/138534676-c6af157c-3474-4df8-acb3-ee13f4118d37.png",
 		link: "https://rogar-iq.github.io/Bootstrap4-Template/index.html",
+	},
+	{
+		id: 2,
+		title: "Bootstrap4 Dashboard",
+		img: "https://user-images.githubusercontent.com/67934444/153712379-36d763f9-483a-458d-b98a-d31c92764d81.png",
+		link: "https://bootstrap-dashboard-105.netlify.app/",
 	},
 ];
 
