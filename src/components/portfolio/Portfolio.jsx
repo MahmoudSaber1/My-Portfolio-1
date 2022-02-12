@@ -8,8 +8,8 @@ export default function Portfolio() {
 	const [data, setData] = useState([]);
 	const list = [
 		{
-			id: "HTML & CSS",
-			title: "HTMLCSS",
+			id: "HTMLCSS",
+			title: "HTML & CSS",
 		},
 		{
 			id: "JavaScript",
@@ -53,7 +53,7 @@ export default function Portfolio() {
 
 	return (
 		<div className="portfolio section-pd" id="projects">
-			<div key={list.id} className="container">
+			<div className="container">
 				<div className="headeing">
 					<h3>Projects</h3>
 					<h3>Projects</h3>
@@ -76,7 +76,7 @@ export default function Portfolio() {
 							<div className="info">
 								<h3>{d.title}</h3>
 								<a href={d.link} target="_blank" rel="noreferrer">
-									Demo
+									Demo <i className="fas fa-arrow-right"></i>
 								</a>
 							</div>
 						</div>

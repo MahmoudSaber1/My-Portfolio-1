@@ -2,6 +2,8 @@ import "./contact.css";
 import React from "react";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 const Contact = () => {
 	const formRef = useRef();
@@ -26,6 +28,8 @@ const Contact = () => {
 				}
 			);
 	};
+
+	const MySwal = withReactContent(Swal);
 
 	return (
 		<div className="contact section-pd" id="contact">
@@ -54,7 +58,11 @@ const Contact = () => {
 							<input type="text" placeholder="Email" name="user_email" />
 							<textarea rows="5" placeholder="Message" name="message" />
 							<button>Submit</button>
-							{done && "Thank You"}
+							{done &&
+								MySwal.fire({
+									title: <strong>Thank you</strong>,
+									icon: "success",
+								})}
 						</form>
 					</div>
 				</div>

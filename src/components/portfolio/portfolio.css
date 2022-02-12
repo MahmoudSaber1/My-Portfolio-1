@@ -88,10 +88,29 @@
   .portfolio .images .item .info h3 {
     font-size: 14px;
   }
-  
+
   .portfolio .images .item .info a {
     padding: 3px 10px;
-    border-radius: 3px;;
+    border-radius: 3px;
   }
-  
+}
+
+.portfolio .images .item .info a i {
+  font-size: 12px;
+  margin-left: 3px;
+  transition: 0.5s;
+}
+
+.portfolio .images .item .info a:hover i {
+  animation: portfolio 1s linear infinite;
+}
+
+@keyframes portfolio {
+  0%,
+  100% {
+    transform: translate(10px);
+  }
+  50% {
+    transform: translate(0px);
+  }
 }
